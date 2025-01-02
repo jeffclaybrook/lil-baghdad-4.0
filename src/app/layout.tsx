@@ -1,21 +1,28 @@
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Host_Grotesk } from "next/font/google"
 import { ReactNode } from "react"
 import { GoogleAnalytics } from "@next/third-parties/google"
 import Footer from "@/components/footer"
 import "./globals.css"
 
-const inter = Inter({ subsets: ["latin"] })
+const hostGrotesk = Host_Grotesk({
+  variable: "--font-host-grotesk",
+  subsets: ["latin"]
+})
 
 export const metadata: Metadata = {
-  title: "Lil Baghdad Iraqi Cuisine",
-  description: "Iraqi made, Texas inspired"
-};
+  title: "Lil Baghdad",
+  description: "Lil Baghdad Iraqi Cuisine"
+}
 
-export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: ReactNode
+}>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${hostGrotesk.variable} antialiased`}>
         <GoogleAnalytics gaId="G-JDJYK3LM1M" />
         {children}
         <Footer />

@@ -1,8 +1,9 @@
-export const appetizers = [
+import { Facebook, Instagram, Google, Phone } from "@/components/icons"
+
+export const APPETIZERS = [
  {
   title: "Appetizer Platter (Hummus, Tabbouleh, Cucumber Dip)",
-  href: "/appetizers/0",
-  id: "0",
+  href: "/appetizer-platter",
   category: "Appetizers",
   description: "A Mezze platter presents an array of petite 4oz. dishes comprised of creamy chickpea hummus, tahini, finely chopped parsley tabouleh, and lusciously crafted homemade yogurt labneh. This beloved spread hails from Middle Eastern and Mediterranean regions and is accompanied by two freshly prepared flatbreads.",
   price: "$14.99",
@@ -10,8 +11,7 @@ export const appetizers = [
  },
  {
   title: "Falafel",
-  href: "/appetizers/1",
-  id: "1",
+  href: "/falafel",
   category: "Appetizers",
   description: "8 deep-fried balls made from ground chickpeas, assorted green vegetables and spices.",
   price: "$7.99",
@@ -19,8 +19,7 @@ export const appetizers = [
  },
  {
   title: "Middle East Salad",
-  href: "/appetizers/2",
-  id: "2",
+  href: "/middle-east-salad",
   category: "Appetizers",
   description: "Diced tomatoes, onions, cucumber, and peppers tossed with a simple vinaigrette of lemon and olive oil.",
   price: "$5.99",
@@ -28,8 +27,7 @@ export const appetizers = [
  },
  {
   title: "Mixed Pickled Vegetables",
-  href: "/appetizers/3",
-  id: "3",
+  href: "/mixed-pickled-vegetables",
   category: "Appetizers",
   description: "Pickled vegetables with turmeric and spices mix.",
   price: "$3.99",
@@ -37,8 +35,7 @@ export const appetizers = [
  },
  {
   title: "Vegan Lentil Soup with Fresh Cumin Seeds and Turmeric",
-  href: "/appetizers/4",
-  id: "4",
+  href: "/vegan-lentil-soup-with-fresh-cumin-seeds-and-tumeric",
   category: "Appetizers",
   description: "One of your iconic and highly loved lentil soup consisting of carrots, fried onion, turmeric and house spice blend slow boiled to perfection.",
   price: "$7.99",
@@ -46,8 +43,7 @@ export const appetizers = [
  },
  {
   title: "Home Fries",
-  href: "/appetizers/5",
-  id: "5",
+  href: "/home-fries",
   category: "Appetizers",
   description: "Herbed and flavored home fries packed with extreme flavor with our famous Tzatziki salsa.",
   price: "$6.99",
@@ -55,8 +51,7 @@ export const appetizers = [
  },
  {
   title: "Naan Bread with Shea Butter and Zaatar 2 Pieces",
-  href: "/appetizers/6",
-  id: "6",
+  href: "/naan-bread-with-shea-butter-and-zaatar",
   category: "Appetizers",
   description: "Our signature homemade naan bread is prepared and baked in an authentic clay oven that it will leave wanting seconds and thirds.",
   price: "$2.99",
@@ -64,8 +59,7 @@ export const appetizers = [
  },
  {
   title: "Tabbouleh Salad",
-  href: "/appetizers/7",
-  id: "7",
+  href: "/tabbouleh-salad",
   category: "Appetizers",
   description: "Our tasty tabbouleh salad consists of bulgur, tomatoes, a blend of herbs, and lemon juice.",
   price: "$5.99",
@@ -73,8 +67,7 @@ export const appetizers = [
  },
  {
   title: "Mama Ganoush",
-  href: "/appetizers/8",
-  id: "8",
+  href: "/mama-ganoush",
   category: "Appetizers",
   description: "A sumptuous and hearty dish, meaty with no meat kind of vibes, eggplant dip made with roasted smoky eggplant, tomatoes, onion, garlic, olive oil, lemon juice, parsley, tomato paste, and salt.",
   price: "$6.99",
@@ -82,8 +75,7 @@ export const appetizers = [
  },
  {
   title: "Dolmeh Grape Leaves",
-  href: "/appetizers/9",
-  id: "9",
+  href: "/dolmeh-graph-leaves",
   category: "Appetizers",
   description: "Chopped beef, rice, onions, and aromatic spices hand-wrapped and slowly cooked for a melt-in-your-mouth texture.",
   price: "$6.99",
@@ -91,8 +83,7 @@ export const appetizers = [
  },
  {
   title: "Hummus Joy",
-  href: "/appetizers/10",
-  id: "10",
+  href: "/hummus-joy",
   category: "Appetizers",
   description: "Delicious, creamy, and flavorful hummus drizzled with Lebanese olive oil.",
   price: "$6.99",
@@ -100,8 +91,7 @@ export const appetizers = [
  },
  {
   title: "Baba Ganoush",
-  href: "/appetizers/11",
-  id: "11",
+  href: "/baba-ganoush",
   category: "Appetizers",
   description: "Spicy, aromatic roasted eggplant mixed with olive oil, tahini salsa, fresh lemon juice, and family spice recipe.",
   price: "$7.99",
@@ -109,8 +99,7 @@ export const appetizers = [
  },
  {
   title: "Cucumber Dill Dip",
-  href: "/appetizers/12",
-  id: "12",
+  href: "/cucumber-dill-dip",
   category: "Appetizers",
   description: "Savory plain yogurt dip/salad made with fresh cucumber, fresh garlic, and dill.",
   price: "$6.99",
@@ -118,8 +107,7 @@ export const appetizers = [
  },
  {
   title: "Tangy Pickled Turnips",
-  href: "/appetizers/13",
-  id: "13",
+  href: "/tangy-pickled-turnips",
   category: "Appetizers",
   description: "Vinegary pickled turnips with a pinch of heat. The perfect complement to any of the savory dishes.",
   price: "$3.99",
@@ -127,11 +115,10 @@ export const appetizers = [
  }
 ]
 
-export const curry = [
+export const CURRY = [
  {
   title: "Chicken Curry with Rice",
-  href: "/curry/0",
-  id: "0",
+  href: "/chicken-curry-with-rice",
   category: "Curry",
   description: "Originating from the Indian region, chicken curry includes a base of coriander and turmeric though the ground spices vary from region to region. Chicken curry in Iraqi cuisine tests the uniqueness of this spicy mix. Served with Basmati rice and a side salad and hummus.",
   price: "$14.99",
@@ -139,8 +126,7 @@ export const curry = [
  },
  {
   title: "Vegan Curry",
-  href: "/curry/1",
-  id: "1",
+  href: "/vegan-curry",
   category: "Curry",
   description: "Chickpea-coconut milk based curry served with steamed rice. It is an all-time favorite comfort food in many homes.",
   price: "$14.99",
@@ -148,8 +134,7 @@ export const curry = [
  },
  {
   title: "Bone-in Goat Curry with Rice",
-  href: "/curry/2",
-  id: "2",
+  href: "/bone-in-goat-curry-with-rice",
   category: "Curry",
   description: "This recipe was handed down by my grandmother. Bone-in goat curry is made on special occasions by elders in the house. This slow-cooked goat meat is creamy and mildly spicy and served with Basmati rice and a side salad and hummus.",
   price: "$18.99",
@@ -157,11 +142,10 @@ export const curry = [
  }
 ]
 
-export const dishes = [
+export const DISHES = [
  {
   title: "Fried Rice Mix with Roasted Lamb Iraqi Style",
-  href: "/dishes/0",
-  id: "0",
+  href: "/fried-rice-mix-with-roasted-lamb-iraqi-style",
   category: "Dishes",
   description: "Basmati rice blended with an assortment of vegetables and flavored with a unique mixture of biryani baharat (spices) and additives. All is topped off with a gorgeous roasted piece of lamb and served with a salad and hummus. This is the fabulous Iraqi-style biryani with its unrivaled taste.",
   price: "$16.99",
@@ -169,8 +153,7 @@ export const dishes = [
  },
  {
   title: "Beef Shawarma Wrap",
-  href: "/dishes/1",
-  id: "1",
+  href: "/beef-shawarma-wrap",
   category: "Dishes",
   description: "Beef shawarma with pita bread, parsley, onions, tomatoes, radishes, tahini sauce, and beef.",
   price: "$13.00",
@@ -178,8 +161,7 @@ export const dishes = [
  },
  {
   title: "Vegetable Wrap",
-  href: "/dishes/2",
-  id: "2",
+  href: "/vegetable-wrap",
   category: "Dishes",
   description: "Sautéed vegetables and hummus, Arabic style pickles wrapped in Pita bread Make a tasty and deliciously tangy one-dish meal!",
   price: "$9.99",
@@ -187,8 +169,7 @@ export const dishes = [
  },
  {
   title: "Lamb Gyro Wrap",
-  href: "/dishes/3",
-  id: "3",
+  href: "/lamb-gyro-wrap",
   category: "Dishes",
   description: "Shawarma is a dish in Middle Eastern cuisine consisting of meat cut into thin slices, stacked in a cone-like shape, and roasted on a slowly-turning vertical rotisserie or spit. Originally made of lamb or mutton, todays shawarma may also be chicken, turkey, beef, or veal our wrap is Lamb meat.",
   price: "$15.00",
@@ -196,8 +177,7 @@ export const dishes = [
  },
  {
   title: "Falafel Plate",
-  href: "/dishes/4",
-  id: "4",
+  href: "/falafel-plate",
   category: "Dishes",
   description: "Garbanzo beans, greens, and spices is served on the top layer of rice, along with veggies, a side dipping hummus, and creamy tahini sauce.",
   price: "$12.50",
@@ -205,8 +185,7 @@ export const dishes = [
  },
  {
   title: "Fried Kibbeh",
-  href: "/dishes/5",
-  id: "5",
+  href: "/fried-kibbeh",
   category: "Dishes",
   description: "Crispy golden fried basmati rice filled with roasted pine nuts, caramelized onion, raisin, and ground beef.",
   price: "$4.99",
@@ -214,8 +193,7 @@ export const dishes = [
  },
  {
   title: "Beef Shawarma Plate",
-  href: "/dishes/6",
-  id: "6",
+  href: "/beef-shawarma-plate",
   category: "Dishes",
   description: "Tender beef mixed with homemade spices and roasted onion and green pepper served with hummus, Middle Eastern salad, and white rice.",
   price: "$14.00",
@@ -223,8 +201,7 @@ export const dishes = [
  },
  {
   title: "Chicken Shawarma Plate",
-  href: "/dishes/7",
-  id: "7",
+  href: "/chicken-shawarma-plate",
   category: "Dishes",
   description: "Spicy marinated chicken strips served with fresh salad and royal rice served with fresh naan bread.",
   price: "$13.50",
@@ -232,8 +209,7 @@ export const dishes = [
  },
  {
   title: "Lamb Kabab Gyro Style",
-  href: "/dishes/8",
-  id: "8",
+  href: "/lamb-kabab-gyro-style",
   category: "Dishes",
   description: "Flour, ground lamb, garlic, onion, fresh parsley, and Iraqi mix spices are the ingredients to our Kabab dish. The Kababs are deep-fried to golden brown perfection and served on a bed of white basmati rice with our house salad and side of hummus.",
   price: "$18.00",
@@ -241,8 +217,7 @@ export const dishes = [
  },
  {
   title: "Gyro Beef with Rice",
-  href: "/dishes/9",
-  id: "9",
+  href: "/gyro-beef-with-rice",
   category: "Dishes",
   description: "Flour, ground beef, and spices deep fried and served with our house salad, in-house hummus, and white Jasmine rice.",
   price: "$14.50",
@@ -250,8 +225,7 @@ export const dishes = [
  },
  {
   title: "Chicken Shawarma Wrap",
-  href: "/dishes/10",
-  id: "10",
+  href: "/chicken-shawarma-wrap",
   category: "Dishes",
   description: "This is homemade Chicken Shawarma. It is made with special sauce and Arabic bread. The special sauce includes tahini, yogurt and fresh lemon juice, tomato sauce and black pepper. The shawarma is then wrapped with Arabic bread and inside is cucumber, tomato, onion, sauce, and good amount of chicken.",
   price: "$12.50",
@@ -259,8 +233,7 @@ export const dishes = [
  },
  {
   title: "Falafel Wrap",
-  href: "/dishes/11",
-  id: "11",
+  href: "/falafel-wrap",
   category: "Dishes",
   description: "One of the most popular Middle Eastern street foods, it is super flavorful and soft on the inside, but crunchy on the outside.",
   price: "$12.50",
@@ -268,11 +241,10 @@ export const dishes = [
  }
 ]
 
-export const desserts = [
+export const DESSERTS = [
  {
   title: "Baklava",
-  href: "/desserts/0",
-  id: "0",
+  href: "/baklava",
   category: "Desserts",
   description: "Made from layers of golden brown phyllo filled with chopped walnuts, sweeten with honey syrup, and a top with crushed pistachio.",
   price: "$4.50",
@@ -280,8 +252,7 @@ export const desserts = [
  },
  {
   title: "Sopapilla Cheesecake",
-  href: "/desserts/1",
-  id: "1",
+  href: "/sopapilla-cheesecake",
   category: "Desserts",
   description: "Flaky crust with sweet cream cheese filling topped with cinnamon sugar.",
   price: "$4.00",
@@ -289,11 +260,10 @@ export const desserts = [
  }
 ]
 
-export const drinks = [
+export const DRINKS = [
  {
   title: "Chill Tamarind Drink",
-  href: "/drinks/0",
-  id: "0",
+  href: "/chill-tamarind-drink",
   category: "Drinks",
   description: "It is a cool, sweet, and tangy drink with an awesome, refreshing taste. It really is a cool drink for a scorching summer.",
   price: "$1.99",
@@ -301,8 +271,7 @@ export const drinks = [
  },
  {
   title: "Rose and Pomegranate Tea",
-  href: "/drinks/1",
-  id: "1",
+  href: "/rose-and-pomegranate-tea",
   category: "Drinks",
   description: "Rose flavored and sweet Pomegranate cold beverage.",
   price: "$1.99",
@@ -310,8 +279,7 @@ export const drinks = [
  },
  {
   title: "Lemonade Refreshing Iced Tea",
-  href: "/drinks/2",
-  id: "2",
+  href: "/lemonade-refreshing-iced-tea",
   category: "Drinks",
   description: "Fresh cardamom and lemon juice. It is sweet & delightful drink with no artificial add-ons.",
   price: "$1.99",
@@ -319,11 +287,17 @@ export const drinks = [
  },
  {
   title: "Hibiscus Tea",
-  href: "/drinks/3",
-  id: "3",
+  href: "/hibiscus-tea",
   category: "Drinks",
   description: "Popular herbal street drink made from dehydrated hibiscus with a sweet and sour taste.",
   price: "$1.99",
   image: "https://images.ctfassets.net/rmkbw43wse32/5dba5cnPB1NhxliR6iPkUX/e869dd6e8cb1c8b78052bec81fc70c9a/hibiscus-tea.jpeg"
  }
+]
+
+export const LINKS = [
+ { href: "https://www.facebook.com/profile.php?id=100074970285412/", icon: Facebook },
+ { href: "https://www.instagram.com/desireddishes/", icon: Instagram },
+ { href: "https://goo.gl/maps/DjnmrwDQn6bWSLAj9", icon: Google },
+ { href: "tel:(512)-831-8122", icon: Phone }
 ]

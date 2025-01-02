@@ -1,11 +1,9 @@
 import Image from "next/image"
-import Doordash from "./icons/doordash"
-import UberEats from "./icons/ubereats"
-import Scroll from "./icons/scroll"
+import { Doordash, Scroll, UberEats } from "./icons"
 
 export default function Header() {
  return (
-  <header className="flex flex-col items-center px-3 pb-16 min-h-screen">
+  <header className="flex flex-col items-center justify-center px-3 pb-16 min-h-screen">
    <figure className="flex flex-col items-center justify-center gap-4 mt-auto mb-10">
     <Image
      src="/logo.png"
