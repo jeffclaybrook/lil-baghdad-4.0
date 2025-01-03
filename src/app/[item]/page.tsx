@@ -26,6 +26,7 @@ export default function Item() {
      alt={title}
      width={600}
      height={250}
+     priority
      className="rounded-xl aspect-video"
     />
     <div className="flex flex-col max-w-[600px]">

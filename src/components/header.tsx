@@ -11,6 +11,7 @@ export default function Header() {
      width={160}
      height={160}
      className="rounded-full object-cover mb-4"
+     priority
     />
     <figcaption className="text-[#d57c4a] uppercase font-light text-xl">
      <strong className="font-semibold">Iraqi</strong> made,{" "}
